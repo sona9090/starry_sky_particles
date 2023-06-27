@@ -1,0 +1,44 @@
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, indigo, darkblue, black) no-repeat center
+    center/100% 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+/* #mountain {
+  width: 100px;
+  height: 100px;
+  background: black;
+  z-index: 1;
+  position: relative;
+} */
+
+.star {
+  width: 2px;
+  height: 1px;
+  background: white;
+  box-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
+  z-index: 1;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  transition: all 2s;
+}
